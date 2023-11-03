@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUEs</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;500;700&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+        <div class="container">
+          <div class="navbar-header"><a class="navbar-brand">TUEs</a></div>
+          <div class="nav navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="#intro">About the book</a></li>
+              <li><a href="#lessons">Lessons from Morrie</a></li>
+              <li><a href="#gallery">Artistic expressions</a></li>
+              <li><a href="#about">About the website</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="book-wrap">
+              <div class="header-text" data-0="background: rgba(255, 255, 255, 0.15)" data-500="background: rgba(255, 255, 255, 0)">
+                <h1>Tuesdays <br> with Morrie</h1>
+                <h3 class="pull-bottom">Mitch Albom</h3>
+                <div class="quote">"We all need teachers in our lives." </div>
+              </div>
+              <div class="book">
+                <div class="img-wrap" data-0="transform: translateX(0px); opacity: 1" data-500="transform: translateX(100px); opacity: 0"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1423763749i/6900.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="summary" data-bottom-top="transform: translateX(-100px); opacity: 0" data-center="transform: translateX(0px); opacity: 1">
+                <p>"Tuesdays with Morrie", Morrie shares his reflections on the art of letting go - of people, possessions, and ultimately, life itself. Through his wisdom and guidance, we learn that acceptance and surrender can be the keys to finding peace and fulfillment in the face of life's many challenges.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="quote">
+                <div class="quote-container" data-bottom-top="transform: translateY(100px); opacity: 0" data-center="transform: translateY(0px); opacity: 1">
+                  <div class="quote-block"> 
+                    <p>Don't let go too soon, but don't hold on too long.</p>
+                  </div>
+                  <div class="quote-author"> 
+                    <p>Mitch Albom</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="author">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 red change">
+              <h1 class="author-title1">Author <br> Information</h1>
+            </div>
+            <div class="col-md-4 col-sm-6 img">
+              <div class="overlay"></div>
+              <div class="img-wrap" data-bottom-top="transform: scale(1.5)" data-center="transform: scale(1)">
+                <div class="image-1 image"></div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 grey part1">
+              <p id="part-1" data-bottom-top="transform: translateY(50px)" data-center="transform: translateY(0px)"></p>
+            </div>
+            <div class="col-md-4 col-sm-6 grey part2">
+              <p id="part-2" data-bottom-top="transform: translateY(50px)" data-center="transform: translateY(0px)"></p>
+            </div>
+            <div class="col-md-4 col-sm-6 red change">
+              <h1 class="author-title2">Mitch Albom’s <br> background</h1>
+            </div>
+            <div class="col-md-4 col-sm-6 img">
+              <div class="overlay"></div>
+              <div class="img-wrap" data-bottom-top="transform: scale(1.5)" data-center="transform: scale(1)">
+                <div class="image-2 image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lessons">
+        <div class="container" data-bottom-top="border-radius: 0px" data-center="border-radius: 10px">
+          <div class="row">
+            <div class="selection">
+              <div class="btn-wrap" data-bottom-top="gap: 0px" data-center="gap: 20px">
+                <div class="love-btn button">Love</div>
+                <div class="forgiveness-btn button">Forgiveness</div>
+                <div class="aging-btn button">Aging</div>
+              </div>
+            </div>
+            <div class="col-md-12 lesson-wrap">
+              <div class="col-md-6 col-sm-12">
+                <h1 class="lesson-title">Lessons on Love</h1>
+                <ul id="showlesson_list" data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1"></ul>
+              </div>
+              <div class="col-md-6" id="showlesson_explain" data-bottom-top="border-radius: 0px; box-shadow: 0 10px 0px rgba(0, 0, 0, 0.2)" data-center="border-radius: 10px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3)"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="container">
+          <div class="row" data-bottom-top="padding: 0px 80px" data-center="padding: 50px 0px">
+            <div class="carousel-gallery">
+              <div class="swiper-container">
+                <div class="swiper-wrapper"></div>
+                <div class="poem">
+                  <p>Every Tuesday, they met,<br>A dying man and a friend.<br>Together they talked and wept,<br>Sharing lessons until the end.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="card-wrap">
+              <div class="text-wrap">
+                <p>Welcome to my website dedicated to the book "Tuesdays with Morrie" by Mitch Albom. Our goal is to honor the legacy of Morrie Schwartz and share the valuable life lessons he imparted to his student, Mitch Albom, with the world. Through this website, we hope to inspire and encourage readers to live more meaningful and fulfilling lives.</p>
+              </div>
+              <div class="designer">
+                <p>☪ Designed by Juliana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+    <script src="script.js"></script>
+</html>
