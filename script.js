@@ -147,3 +147,71 @@ $(".aging-btn").click(function () {
     $(".btn-wrap .button").css('color', "#999999")
     $(this).css('color', "black");
 });
+
+// Gallery
+const slideData = [{
+    title: 'Images',
+    images: [
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    ]
+}];
+slideData[0].images.forEach(function (image) {
+    const swiperSlide = $('<div>').addClass('swiper-slide');
+    const imgUrl = $('<a>').attr('href', image).attr('data-fancybox', 'gallery');
+    const img = $('<img>').addClass('image').attr('src', image).attr('alt', '');
+    swiperSlide.append(imgUrl);
+    imgUrl.append(img);
+    $('.swiper-wrapper').append(swiperSlide);
+});
+
+var swiper = new Swiper('.carousel-gallery .swiper-container', {
+    effect: 'slide',
+    speed: 900,
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: '5',
+    spaceBetween: 60,
+    autoplay: {
+        delay: 4000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        425: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 50
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 60
+        },
+        1240: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 70
+        },
+    }
+});
+
+$('[data-fancybox]').fancybox({
+    buttons: [
+        'close'
+    ],
+    toolbar: false,
+    clickContent: false
+});
